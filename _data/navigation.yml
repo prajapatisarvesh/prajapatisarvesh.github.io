@@ -21,7 +21,7 @@ main:
   #   url: /year-archive/
     
   - title: "CV"
-    url: /cv/
+    url: https://docs.google.com/viewer?url=https://raw.githubusercontent.com/prajapatisarvesh/cv/main/resume.pdf
     
   # - title: "Guide"
   #   url: /markdown/
