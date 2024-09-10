@@ -67,21 +67,25 @@
 }
 
 .archive__item-teaser {
-  border-radius: $border-radius;
+  float: left;  // Add this line to float the image to the left
+  width: 30%;   // Set the width of the image container to 30%
+  margin-right: 1.5em;  // Add some space between the image and the content
+  padding-top: 3em;
   overflow: hidden;
+
   img {
-    width: 100%;
+    width: 100%; // Ensures the image takes up the full width of the container
+    height: auto; // Maintains the aspect ratio of the image
+    border-radius: 15px; /* Adjust this value for softer or sharper corners */
+    border: 2px solid black; /* 2px is the thickness of the border, change as needed */
+    overflow: hidden; /* Ensures the image content doesn't overflow the rounded corners */
+    display: inline-block; /* Helps in some cases to respect the border-radius */
   }
 }
 
-.archive__item:hover {
-  .archive__item-teaser {
-    box-shadow: 0 0 10px rgba(#000, 0.25);
-  }
 
-  .archive__item-title {
-    text-decoration: underline;
-  }
+.archive__item {
+  overflow: hidden; // Clear the float to ensure proper layout
 }
 
 
