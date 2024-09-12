@@ -6,8 +6,8 @@ category: preprint
 permalink: /publication/2024-09-01-ananya-RAL
 # excerpt: 'This paper is about fixing template issue #693.'
 date: 2024-08-24
-venue: 'IEEE Conference on Robotics and Automation'
+venue: 'Under Review'
 # paperurl: 'https://arxiv.org/abs/2402.18065'
-citation: 'Ananya Trivedi, Anway Shirgaonkar, <b>Sarvesh Prajapati</b>, Mark Zolotas, Taşkin Padır'
+citation: 'Ananya Trivedi, <b>Sarvesh Prajapati</b>, Anway Shirgaonkar, Mark Zolotas, Taşkin Padır'
 # slidesurl: 'ab'
 ---
