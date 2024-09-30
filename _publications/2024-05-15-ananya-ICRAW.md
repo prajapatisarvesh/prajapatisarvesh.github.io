@@ -2,7 +2,7 @@
 title: "Online Refinement of Uncertainty Sets for Robust MPC of Quadrupedal Robots Using Convex Cone Programming"
 image: /images/publications/ananya_icraw.png
 collection: publications
-category: conferences
+category: workshop
 permalink: /publication/2024-09-01-ananya-RAL
 # excerpt: 'This paper is about fixing template issue #693.'
 date: 2024-08-24
