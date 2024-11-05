@@ -9,6 +9,6 @@ permalink: /publication/2024-09-01-ananya-RAL
 date: 2024-08-24
 venue: 'IEEE International Symposium on Safety, Security, and Rescue Robotics'
 # paperurl: 'http://academicpages.github.io/files/paper3.pdf'
-citation: 'Nathaniel Hanson, James Tukpah, <b>Sarvesh Prajapati</b>, Yash Mewada, Taşkin Padır'
+citation: 'Nathaniel Hanson*, <b>Sarvesh Prajapati*</b>, James Tukpah, Yash Mewada, Taşkin Padır'
 # slidesurl: 'ab'
 ---
