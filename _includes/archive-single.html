@@ -86,6 +86,8 @@
       <p> {{ post.citation }}<br /><a href="{{ post.paperurl }}"><i class="fa-solid fa-file"></i>Paper</a> | <a href="{{ post.code }}"><i class="fa-solid fa-code"></i>Code</a></p> 
     {% elsif post.citation and post.paperurl %}
       <p> {{ post.citation }}<br /><a href="{{ post.paperurl }}"><i class="fa-solid fa-file"></i>Paper</a></p>
+      {% elsif post.citation and post.paperurl and post.poster %}
+      <p> {{ post.citation }}<br /><a href="{{ post.paperurl }}"><i class="fa-solid fa-file"></i>Paper</a> | <a href="{{ post.poster }}"><i class="fa-solid fa-image"></i>Poster</a></p> 
     {% elsif post.citation and post.slidesurl %}
       <p> {{ post.citation }}<br /><a href="{{ post.slidesurl }}">Download Slides</a></p>
     {% elsif post.citation %}
