@@ -2,7 +2,7 @@
 title: "Chance-Constrained Convex MPC for Robust Quadruped Locomotion Under Parametric and Additive Uncertainties"
 image: /images/publications/ananya_ral.gif
 collection: journal
-category: journal
+category: manuscripts
 permalink: /publication/2024-09-01-ananya-RAL
 # excerpt: 'This paper is about fixing template issue #693.'
 video: 'https://www.youtube.com/watch?si=J6zQPTIxpckKjh9i&v=hb4ZkGIjR7c&feature=youtu.be'
