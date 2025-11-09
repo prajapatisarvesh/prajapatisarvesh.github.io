@@ -8,7 +8,7 @@ permalink: /publication/2024-09-01-ananya-RAL
 date: 2025-08-24
 venue: 'IEEE Conference on Automation Science and Engineering'
 paperurl: 'https://arxiv.org/pdf/2506.08344'
-citation: 'Neşet Ünver Akmandor, <b>Sarvesh Prajapati</b>, Mark Zolotas, Taşkin Padır'
+citation: 'Neşet Ünver Akmandor, <b>Sarvesh Prajapati*</b>, Mark Zolotas*, Taşkin Padır'
 code: 'https://github.com/river-Lab/mobiman'
 # slidesurl: 'ab'
 ---
