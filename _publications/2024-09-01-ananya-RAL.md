@@ -8,6 +8,7 @@ permalink: /publication/2024-09-01-ananya-RAL
 video: 'https://www.youtube.com/watch?si=J6zQPTIxpckKjh9i&v=hb4ZkGIjR7c&feature=youtu.be'
 date: 2025-08-24
 venue: 'IEEE Robotics and Automation Letters'
+award: 'Best Paper Finalist (Top 3), IEEE RAS Technical Committee on Optimization for Robotics'
 paperurl: 'https://cc-mpc.github.io/static/assets/Chance_Constrained_Convex_MPC_for_Quadruped_Locomotion.pdf'
 citation: 'Ananya Trivedi, <b>Sarvesh Prajapati</b>, Mark Zolotas, Michael Everett, Taşkin Padır'
 code: 'https://github.com/RIVeR-Lab/Chance-Constrained-MPC'

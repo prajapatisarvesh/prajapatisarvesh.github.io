@@ -1,0 +1,138 @@
+---
+layout: null
+permalink: /
+redirect_from:
+  - /about/
+  - /about.html
+---
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <title>{{ site.author.name }}</title>
+
+    <meta name="author" content="{{ site.author.name }}">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="{{ '/images/favicon.ico' | relative_url }}" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&display=swap">
+    <link rel="stylesheet" type="text/css" href="{{ '/assets/css/revamp.css' | relative_url }}">
+  </head>
+
+  <body>
+    <table class="page"><tbody>
+      <tr>
+        <td>
+          <table class="section"><tbody>
+            <tr>
+              <td class="intro">
+                <p class="name">{{ site.author.name }}</p>
+                <p>
+                  I am a first-year PhD student in Electrical and Computer Engineering at <a href="https://www.northeastern.edu/">Northeastern University</a>.
+                  My research interests span robot perception, machine learning, control, and optimization.
+                  Currently, my research focuses on developing autonomous wheelchairs that empower individuals to move independently.
+                </p>
+                <p>
+                  I'm also interested in human-robot interaction and robotic manipulation, and in bridging the gap between theoretical advances in robotics and their deployment on meaningful, real-world problems.
+                </p>
+                <p class="links">
+                  <a href="mailto:{{ site.author.email }}">Email</a> &nbsp;/&nbsp;
+                  <a href="https://docs.google.com/viewer?url=https://raw.githubusercontent.com/prajapatisarvesh/cv/main/resume.pdf">CV</a> &nbsp;/&nbsp;
+                  <a href="{{ site.author.googlescholar }}">Scholar</a> &nbsp;/&nbsp;
+                  <a href="https://github.com/{{ site.author.github }}">GitHub</a> &nbsp;/&nbsp;
+                  <a href="https://www.linkedin.com/in/{{ site.author.linkedin }}">LinkedIn</a> &nbsp;/&nbsp;
+                  <a href="{{ site.author.orcid }}">ORCID</a>
+                </p>
+              </td>
+              <td class="photo">
+                <a href="{{ '/images/' | append: site.author.avatar | relative_url }}"><img alt="profile photo" src="{{ '/images/' | append: site.author.avatar | relative_url }}"></a>
+              </td>
+            </tr>
+          </tbody></table>
+
+          {% assign publications = site.publications | sort: "date" | reverse %}
+          {% for section in (1..2) %}
+            {% if section == 1 %}
+              {% assign categories = "conferences,manuscripts" | split: "," %}
+              {% assign heading = "Research" %}
+            {% else %}
+              {% assign categories = "workshop" | split: "," %}
+              {% assign heading = "Workshop Papers" %}
+            {% endif %}
+          <table class="section"><tbody>
+            <tr>
+              <td class="heading">
+                <h2>{{ heading }}</h2>
+                {% if section == 1 %}<p>Some papers are <span class="highlight">highlighted</span>. * denotes equal contribution.</p>{% endif %}
+              </td>
+            </tr>
+          </tbody></table>
+          <table class="section papers"><tbody>
+            {% for post in publications %}
+              {% unless categories contains post.category %}{% continue %}{% endunless %}
+              {% if post.website %}{% assign main_link = post.website %}{% else %}{% assign main_link = post.paperurl %}{% endif %}
+            <tr{% if post.award %} class="highlight"{% endif %}>
+              <td class="teaser">
+                {% if post.video_teaser %}
+                <video src="{{ post.video_teaser | relative_url }}" poster="{{ post.image | relative_url }}" autoplay muted loop playsinline preload="auto" oncanplay="this.muted = true; this.play().catch(() => {});"></video>
+                {% elsif post.image %}
+                <img src="{{ post.image | relative_url }}" alt="">
+                {% endif %}
+              </td>
+              <td class="details">
+                {% if main_link %}<a href="{{ main_link | relative_url }}">{% endif %}<span class="papertitle">{{ post.title }}</span>{% if main_link %}</a>{% endif %}
+                <br>
+                {{ post.citation | replace: "<b>", "<strong>" | replace: "</b>", "</strong>" }}
+                <br>
+                <em>{{ post.venue }}</em>{% unless post.venue == "Under Review" %}, {{ post.date | date: "%Y" }}{% endunless %}
+                {% if post.award %}&nbsp;<span class="award">({{ post.award }})</span>{% endif %}
+                <br>
+                {% capture links %}
+                  {% if post.website %}<a href="{{ post.website }}">project page</a> / {% endif %}
+                  {% if post.paperurl %}<a href="{{ post.paperurl | relative_url }}">paper</a> / {% endif %}
+                  {% if post.code %}<a href="{{ post.code }}">code</a> / {% endif %}
+                  {% if post.video %}<a href="{{ post.video }}">video</a> / {% endif %}
+                  {% if post.poster %}<a href="{{ post.poster | relative_url }}">poster</a> / {% endif %}
+                {% endcapture %}
+                {% assign links = links | strip %}
+                {% assign links_size = links | size | minus: 2 %}
+                {{ links | slice: 0, links_size }}
+              </td>
+            </tr>
+            {% endfor %}
+          </tbody></table>
+          {% endfor %}
+
+          <table class="section"><tbody>
+            <tr>
+              <td class="heading">
+                <h2>Teaching</h2>
+              </td>
+            </tr>
+          </tbody></table>
+          <table class="section misc"><tbody>
+            <tr>
+              <td>
+                {% assign teaching = site.teaching | sort: "path" | reverse %}
+                {% for item in teaching %}
+                {{ item.title }}<br>
+                {% endfor %}
+              </td>
+            </tr>
+          </tbody></table>
+
+          <table class="section"><tbody>
+            <tr>
+              <td>
+                <p class="credit">
+                  Website template from <a href="https://github.com/jonbarron/jonbarron_website">Jon Barron</a>.
+                </p>
+              </td>
+            </tr>
+          </tbody></table>
+        </td>
+      </tr>
+    </tbody></table>
+  </body>
+</html>
