@@ -71,6 +71,7 @@
 }
 
 .archive__item-teaser {
+  clear: both;
   float: left;  // Add this line to float the image to the left
   width: 30%;   // Set the width of the image container to 30%
   margin-right: 1.5em;  // Add some space between the image and the content

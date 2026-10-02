@@ -6,7 +6,7 @@ category: conferences
 permalink: /publication/2025-05-15-ananya-ICRA
 # excerpt: 'This paper is about fixing template issue #693.'
 date: 2025-08-24
-venue: 'IEEE Conference on Robotics and Automation'
+venue: 'IEEE International Conference on Robotics and Automation'
 paperurl: 'https://stochasticmppi.github.io/static/assets/SMPPI.pdf'
 citation: 'Ananya Trivedi, <b>Sarvesh Prajapati</b>, Anway Shirgaonkar, Mark Zolotas, Taşkin Padır'
 website: 'https://stochasticmppi.github.io/'
