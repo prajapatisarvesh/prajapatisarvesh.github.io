@@ -1,5 +1,5 @@
 ---
-title: "Teaching Assistant for CS 7180 -- Advanced Perception"
+title: "Teaching Assistant for CS 7180 — Advanced Perception"
 collection: teaching
 type: "Workshop"
 permalink: /teaching/2015-spring-teaching-1

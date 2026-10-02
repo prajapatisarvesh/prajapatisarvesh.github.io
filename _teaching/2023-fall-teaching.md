@@ -1,5 +1,5 @@
 ---
-title: "Teaching assistant for EECE 2160 -- Embedded Design Enabling Robotics"
+title: "Teaching Assistant for EECE 2160 — Embedded Design Enabling Robotics"
 collection: teaching
 type: "Undergraduate course"
 permalink: /teaching/2014-spring-teaching-1
