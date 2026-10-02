@@ -77,7 +77,7 @@
   padding-top: 3em;
   overflow: hidden;
 
-  img {
+  img, video {
     width: 100%; // Ensures the image takes up the full width of the container
     height: auto; // Maintains the aspect ratio of the image
     border-radius: 15px; /* Adjust this value for softer or sharper corners */

@@ -11,7 +11,11 @@
 {% else %}
   {% assign title = post.title %}
 {% endif %}
-{% if post.image %}
+{% if post.video_teaser %}
+      <div class="archive__item-teaser">
+        <video src="{{ post.video_teaser }}" poster="{{ post.image }}" autoplay muted loop playsinline preload="auto" oncanplay="this.muted = true; this.play().catch(() => {});" height="300" width="400"></video>
+      </div>
+{% elsif post.image %}
       <div class="archive__item-teaser">
         <img src=
           {% if teaser contains "://" %}
