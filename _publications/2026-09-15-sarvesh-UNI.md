@@ -7,6 +7,7 @@ category: conferences
 permalink: /publication/2026-09-15-sarvesh-UNI
 date: 2026-09-15
 venue: 'Under Review'
+highlight: true
 paperurl: 'https://universal-nav.github.io/static/paper/universal-navigation-interface.pdf'
 citation: '<b>Sarvesh Prajapati</b>, Ananya Trivedi*, Lorena Maria Genua*, Drake Moore, Taşkin Padır'
 website: 'https://universal-nav.github.io/'

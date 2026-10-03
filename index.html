@@ -72,7 +72,7 @@ redirect_from:
             {% for post in publications %}
               {% unless categories contains post.category %}{% continue %}{% endunless %}
               {% if post.website %}{% assign main_link = post.website %}{% else %}{% assign main_link = post.paperurl %}{% endif %}
-            <tr{% if post.award %} class="highlight"{% endif %}>
+            <tr{% if post.award or post.highlight %} class="highlight"{% endif %}>
               <td class="teaser">
                 {% if post.video_teaser %}
                 <video src="{{ post.video_teaser | relative_url }}" poster="{{ post.image | relative_url }}" autoplay muted loop playsinline preload="auto" oncanplay="this.muted = true; this.play().catch(() => {});"></video>
